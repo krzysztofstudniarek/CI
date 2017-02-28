@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="8">
+        <h1>Continous Integration</h1>
+        <h2>Jak ja to widzę.</h2>
+    </div>
+    <div class="step" data-x="-6000" data-y="4500" data-scale="4">
+        <h1>Czym jest CI?</h1>
+    </div>
+	<div class="step" data-x="-6000" data-y="5500">
+		<b>Continuous integration (CI)</b> is the practice of merging all developer working copies to a shared mainline several times a day.</br>
+		<i>Grady Booch</i>
+	</div>
+	<div class="step" data-x="-6000" data-y="6500">
+		<b>Continuous Integration</b> doesn’t get rid of bugs, but it does make them dramatically easier to find and remove.</br>
+		<i>Martin Fowler</i>
+	</div>
+	<div class="step" data-x="-6000" data-y="7500">
+		<b>Best practices:</b></br>
+		<ul>
+			<li><strike>Maintain a code repository</strike></li>
+			<li>Automate build</li>
+			<li><b>Make the build self-testing</b></li>
+			<li>Every commit should build on an integration machine</li>
+			<li>Keep the build fast</li>
+			<li><b>Test in a clone of the production environment</b></li>
+			<li>...</li>
+		</ul>
+	</div>
+	
+    <div class="step" data-x="-2000" data-y="4500" data-scale="4">
+        Jak to ma wyglądać?
+		
+    </div>
+	<div class="step" data-x="-2000" data-y="5500">
+		<img src="1.png"></img>
+	</div>
+	
+	
+    <div class="step" data-x="2000" data-y="4500" data-scale="4">
+        <h1>Jak ja to widzę u nas?</h1> 
+    </div>
+	<div class="step" data-x="2000" data-y="5500">
+		<b>Testy</b>, integracyjne, jednostkowe i wszystkie inne.
+	</div>
+	<div class="step" data-x="2000" data-y="6500">
+		git bisect 
+	</div>
+	<div class="step" data-x="2000" data-y="7500">
+		Infrastructure as Code (Ansible, puppet )
+	</div>
+
+	<div id="end" class="step" data-x="0" data-y="14000" data-scale="8">
+        <h1>A teraz, czekam na krytykę.</h1>
+    </div>	
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
